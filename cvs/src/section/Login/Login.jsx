@@ -5,6 +5,12 @@ function Login() {
   return (
     <section id='login-form'>
 
+<div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+ </div>
+
     <form className='sign-in'>
   <div class="form-row">
     <div class="form-group col-md-6">
