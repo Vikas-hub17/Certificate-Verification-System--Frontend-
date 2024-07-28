@@ -4,7 +4,9 @@ import Login from '../src/section/Login/Login';
 
 function App() {
   return (
-     <Login />
+    <div className='login'>
+      <Login /> 
+    </div>
   )
 }
 
