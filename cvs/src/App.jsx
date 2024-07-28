@@ -3,9 +3,9 @@ import Login from '../src/section/Login/Login';
 
 
 function App() {
-  return 
+  return (
      <Login />
-  
+  )
 }
 
 export default App

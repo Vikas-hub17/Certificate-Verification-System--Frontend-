@@ -3,24 +3,38 @@ import styles from './Loginstyles.css';
 
 function Login() {
   return (
+
     <section id='login-form'>
 
+<div className="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true" />
+
+			<div className="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="" />
+					<input type="email" name="email" placeholder="Email" required="" />
+          <input type="number" name="broj" placeholder="BrojTelefona" required="" />
+					<input type="password" name="pswd" placeholder="Password" required="" />
+					<button>Sign up</button>
+        </form>
+	    </div>
+		
+
+			<div className="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="" />
+					<input type="password" name="pswd" placeholder="Password" required="" />
+					<button>Login</button>
+        </form>
+      </div>
+</div>
+  </section>
 
 
-    <form className='sign-in'>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" />
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
-    </section>
+
+
   )
 }
 
