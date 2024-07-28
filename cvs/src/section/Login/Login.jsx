@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import styles from './Loginstyles.css';
 
 function Login() {
   return (
-    <>
-
     <section id='login-form'>
 
     <form className='sign-in'>
@@ -20,8 +19,6 @@ function Login() {
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
     </section>
-    
-    </ >
   )
 }
 
