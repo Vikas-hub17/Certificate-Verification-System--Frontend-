@@ -4,8 +4,6 @@ import _styles from '../Login/Loginstyles.css';
 function Login() {
   return (
 
-    <section id='login-form'>
-
 <div className="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true" />
 
@@ -30,9 +28,8 @@ function Login() {
         </form>
       </div>
 </div>
-  </section>
-  
-  )
+
+  );
 }
 
 export default Login
