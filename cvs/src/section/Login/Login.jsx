@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import _styles from '../Login/Loginstyles.css';
 
-function Login() {
+const Login = () => {
+	const [email, setEmail] = useState("");
+	const [password, setPasswword] = useState("");
+	const [confirmPassword, setconfirmPassword] = useState("");
+
+	const handleLogin = (e) => {
+		e.preventDefault();
+		console.log("signup email:" , email, "password:" , password);
+	};
+
   return (
 
 <div className="main">  	
@@ -10,10 +19,9 @@ function Login() {
 			<div className="signup">
 				<form>
 					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" required />
-					<input type="email" name="email" placeholder="Email" required />
-                    <input type="number" name="broj" placeholder="BrojTelefona" required />
-					<input type="password" name="pswd" placeholder="Password" required />
+					<input type="email" name="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input type="password" name="new_pswd" placeholder="New Password" value={password} onChange={(e) => setPasswword(e.target.value)} required />
+					<input type="password" name="confirm_pswd" placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setconfirmPassword(e.target.value)}  required />
 					<button>Sign up</button>
         </form>
 	    </div>
@@ -30,6 +38,6 @@ function Login() {
 </div>
 
   );
-}
+};
 
-export default Login
+export default Login;
