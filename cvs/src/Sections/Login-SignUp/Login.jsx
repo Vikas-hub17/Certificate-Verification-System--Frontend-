@@ -1,7 +1,21 @@
 import React from 'react';
+import styles from './Login-styles.css';
+import email from "../../assests/email.png";
+import user from "../../assests/user.png";
+import pass from "../../assests/password.png";
+
 
 function Login() {
   return (
+
+  <body>
+
+  <div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+  </div>
+
 
     <div className='Login'>
         <div className='header'>
@@ -12,17 +26,17 @@ function Login() {
         <div className='inputs'>
 
           <div className='input'>
-            <img src='' alt='' />
+            <img src={user} alt='' />
             <input type='text' />
           </div>
 
           <div className='input'>
-            <img src='' alt='' />
+            <img src={pass} alt='' />
             <input type='email' />
           </div>
 
           <div className='input'>
-            <img src='' alt='' />
+            <img src={email} alt='' />
             <input type='password' />
           </div>
 
@@ -30,13 +44,14 @@ function Login() {
 
           <div className='forgot-pass'>Forget Password </div>
           <div className='sumbit-container'>
-          <div className='submit'> Sign Up</div>
-          <div className='submit'> Login </div>
+          <div className='submit'> <button>Sign Up</button> </div>
+          <div className='submit'> <button>Login</button> </div>
           </div>
 
 
-
         </div>
+
+        </body>
 
   );
 };
