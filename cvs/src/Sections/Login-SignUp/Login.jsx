@@ -27,25 +27,25 @@ function Login() {
 
           <div className='input'>
             <img src={user} alt='' />
-            <input type='text' />
+            <input type='text' placeholder='username' />
           </div>
 
           <div className='input'>
             <img src={pass} alt='' />
-            <input type='email' />
+            <input type='email' placeholder='email' />
           </div>
 
           <div className='input'>
             <img src={email} alt='' />
-            <input type='password' />
+            <input type='password' placeholder='password' />
           </div>
 
           </div>
 
-          <div className='forgot-pass'>Forget Password </div>
+          <center><div className='forgot-pass'> <a href=''>Forget Password </a> </div></center>
           <div className='sumbit-container'>
           <div className='submit'> <button>Sign Up</button> </div>
-          <div className='submit'> <button>Login</button> </div>
+          <div className='submit-login'> Already have an account?  <button>Login</button> </div>
           </div>
 
 
