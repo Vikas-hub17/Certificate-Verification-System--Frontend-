@@ -178,10 +178,19 @@ input{
     font-weight: 700;
     font-size: 15px;
     cursor: pointer;
+
+}
+.submit{
+    border-radius: 100px;
 }
 
-button:hover{
+/* button:hover{
     transition: 0.5s ease-in-out;
     background-color: #bdbdbd96;
     box-shadow: 4px 4px 6px rgb(79, 79, 79);
+} */
+
+.gray{
+    background-color: #eaeaea;
+    color: #676767;
 }

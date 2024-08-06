@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import styles from './Login-styles.css';
+import './Login-styles.css';
 import email from "../../assests/email.png";
 import user from "../../assests/user.png";
 import pass from "../../assests/password.png";
 
 
- function Login() {
+const Login = () => {
+
+  const [action,setAction] = useState("Login");
  
   return (
 
@@ -26,6 +28,11 @@ import pass from "../../assests/password.png";
 
         <div className='inputs'>
 
+          {action==="Login"?<div />: <div className='input'>
+            <img src={user} alt='' />
+            <input type='text' placeholder='Name' />
+          </div>}
+
           <div className='input'>
             <img src={user} alt='' />
             <input type='text' placeholder='Name' />
@@ -42,11 +49,11 @@ import pass from "../../assests/password.png";
           </div>
 
           </div>
-
-          <center><div className='forgot-pass'> <a href=''>Forget Password </a> </div></center>
+          
+          {action==="Sign Up"?<div/>:<center><div className='forgot-pass'> <a href=''>Forget Password </a> </div></center>}
           <div className='sumbit-container'>
-          <div className='submit'> <button>Sign Up</button> </div>
-          <div className='submit'><button>Login</button> </div>
+          <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("Sign Up")}}> <button>Sign Up</button> </div>
+          <div className={action==="Sign Up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}><button>Login</button> </div>
           </div>
 
 
