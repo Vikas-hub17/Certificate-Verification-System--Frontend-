@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Login-styles.css';
 import email from "../../assests/email.png";
 import user from "../../assests/user.png";
 import pass from "../../assests/password.png";
 
 
-function Login() {
+ function Login() {
+ 
   return (
 
   <body>
@@ -19,7 +20,7 @@ function Login() {
 
     <div className='Login'>
         <div className='header'>
-          <div className='text'>Sign Up</div>
+          <div className='text'>{action}</div>
           <div className='underline'></div>
         </div>
 
@@ -27,17 +28,17 @@ function Login() {
 
           <div className='input'>
             <img src={user} alt='' />
-            <input type='text' placeholder='username' />
+            <input type='text' placeholder='Name' />
           </div>
 
           <div className='input'>
             <img src={pass} alt='' />
-            <input type='email' placeholder='email' />
+            <input type='email' placeholder='Email' />
           </div>
 
           <div className='input'>
             <img src={email} alt='' />
-            <input type='password' placeholder='password' />
+            <input type='password' placeholder='Password' />
           </div>
 
           </div>
@@ -45,7 +46,7 @@ function Login() {
           <center><div className='forgot-pass'> <a href=''>Forget Password </a> </div></center>
           <div className='sumbit-container'>
           <div className='submit'> <button>Sign Up</button> </div>
-          <div className='submit-login'> Already have an account?  <button>Login</button> </div>
+          <div className='submit'><button>Login</button> </div>
           </div>
 
 

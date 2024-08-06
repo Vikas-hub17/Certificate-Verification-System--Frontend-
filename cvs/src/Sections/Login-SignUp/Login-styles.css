@@ -78,16 +78,25 @@ body {
      background-color:rgba(255, 255, 255, 0.316);
      height: 400px;
      width: 400px;
-     margin: 0 auto;
+     margin: 60px auto;
      border-radius: 10px;
      box-shadow: 20px grey 10px;
-     padding: 20px;
+     padding-bottom: 20px;
      font-family: 'Times New Roman', Times, serif;
+     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.716);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin-top: 30px;
 }
 
 img{
 
-    
     height: 40px;
     width: 40px;
     text-align: justify;
@@ -95,13 +104,17 @@ img{
 }
 
 .text{
-    background-color: rgba(217, 217, 217, 0.366);
-    padding: 10px;
-    text-align: center;
+    color: #3c009d;
+    font-size: 40px;
     font-weight: 700;
-    font-size: 200%;
-    border-radius: 5px;
-    box-shadow: 3px 2px 2px rgb(195, 194, 194);
+}
+
+.underline{
+    width: 90px;
+    height: 4px;
+    background-color: #3c009d;
+    border-radius: 9px;
+    margin: 0 auto;
 }
 
 /* Css for input types parent div */
@@ -111,17 +124,17 @@ img{
     flex-direction: column;
     text-align: center;
     margin-top: 55px;
-    gap: ;
 
 }
 
 /* Css for input types */
 input{
-
+    
+    background: #eaeaea;
+    border-radius: 8px;
     height: 40px;
     width: 250px;
     margin-bottom: 20px;
-    border-radius: 5px;
     border-color: 2px black;
     margin-bottom: 10px;
     font-size: 15px;
@@ -129,16 +142,8 @@ input{
 }
 .sumbit-container{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin:auto;
-}
-
-button:hover{
-    cursor: grab;
-    background-color: aqua;
-    transition: 1s ease-in;
-    width: 100;
+    margin: 30px auto;
+    gap: 20px;
 }
 
 .input{
@@ -161,12 +166,22 @@ button:hover{
 }
 
 .submit button{
-
-    width: 100px;
-    font-weight: 500;
-    padding: 12px;
-    border-radius: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    background-color: #bdbdbd2a;
+    border-radius: 50px;
+    font-weight: 700;
     font-size: 15px;
-    margin-top: 0px;
-    box-shadow: 4px 2px 10px black;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #bdbdbd96;
+    box-shadow: 4px 4px 6px rgb(79, 79, 79);
 }
