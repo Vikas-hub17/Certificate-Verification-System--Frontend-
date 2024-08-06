@@ -18,7 +18,7 @@ import pass from "../../assests/password.png";
   </div>
 
 
-    <div className='Login'>
+    <div className='container'>
         <div className='header'>
           <div className='text'>{action}</div>
           <div className='underline'></div>

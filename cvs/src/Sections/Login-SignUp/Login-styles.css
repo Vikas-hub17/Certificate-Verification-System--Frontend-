@@ -71,7 +71,7 @@ body {
 
 /* Css for login-signup */
 
-.Login{
+.container{
 
      display: flex;
      flex-direction: column;
